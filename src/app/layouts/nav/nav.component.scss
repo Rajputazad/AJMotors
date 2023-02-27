@@ -1,0 +1,112 @@
+// p { line-height: 1.8; }
+
+// a { 
+//     text-decoration: none;
+//     transition: all 0.3s ease; 
+// }
+// a:hover { color:#009999; }
+// .container-fluid { max-width: 1770px; }
+// .tm-container-small { max-width: 1050px; }
+// .btn { border-radius: 0; }
+// .btn-primary {
+//     background-color: #009999;
+//     border: 0;
+//     border-radius: 5px;
+//     padding: 12px 50px 14px;
+//     font-size: 1.2rem;
+// }
+
+// .btn-primary:hover,
+// .btn-primary:focus {
+//     background-color:#086969;
+// }
+
+// .btn-primary.disabled, 
+// .btn-primary:disabled {
+//     background-color: #009999;
+//     pointer-events: all;
+//     cursor: not-allowed;
+// }
+
+// .form-control {
+// 	padding: 10px 20px;
+// 	width: 100%;
+// 	height: auto;
+// }
+
+// .form-group { margin-bottom: 25px; }
+// .tm-btn-big { padding: 12px 90px 14px; }
+
+// .navbar-toggler:focus { box-shadow: none; }
+// .navbar-brand {
+//     color: #3399CC;
+//     font-size: 1.6rem;
+// }
+
+// .navbar-brand i { font-size: 2rem; }
+
+// .tm-hero {
+//     min-height: 200px;
+//     background: transparent;
+// }
+
+// .tm-mt-60 { margin-top: 60px; }
+// .tm-mb-50 { margin-bottom: 50px; }
+// .tm-mb-74 { margin-bottom: 74px; }
+// .tm-mb-90 { margin-bottom: 90px; }
+// .tm-text-primary { color: #009999; }
+// .tm-text-secondary { color: #CC6699; }
+// a.tm-text-primary:hover { color:#666666; }
+// .tm-bg-gray { background-color: #EEEEEE; }
+// .tm-input-paging {
+//     width: 40px;
+//     border-radius: 0;
+//     border: 1px solid #CCCCCC;
+//     background: #f4f4f4;
+//     text-align: center;
+// }
+// .nav-item { margin-right: 30px; }
+// .nav-item:last-child { margin-right: 0; }
+
+// .nav-link {
+//     color: #666666;
+//     border-bottom: 4px solid transparent;
+//     font-size: 1.2rem;
+// }
+
+// .nav-link-1.active,
+// .nav-link-1:hover {
+//     border-color: #33CCFF;
+// }
+
+// .nav-link-2.active,
+// .nav-link-2:hover {
+//     border-color: #FF6666;
+// }
+
+// .nav-link-3.active,
+// .nav-link-3:hover {
+//     border-color: #33CC66;
+// }
+
+// .nav-link-4.active,
+// .nav-link-4:hover {
+//     border-color: #CC66CC;
+// }
+// @media (max-width: 991px) {
+//     .navbar-collapse {
+//         position: fixed;
+//         top: 50px;
+//         right: 0px;
+//         background: white;
+//         width: 150px;
+//         padding: 15px;
+//     }
+
+//     .tm-container-content { max-width: 870px; }
+//     .tm-contact-form, .tm-address-col, .mapouter { max-width: 100%; }
+//     .tm-people-row { max-width: 900px; }
+// }
+a{
+    cursor: pointer;
+}
