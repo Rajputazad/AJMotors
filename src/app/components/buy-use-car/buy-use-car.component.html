@@ -1,1 +1,103 @@
-<p>buy-use-car works!</p>
+
+<div class="card mb-4">
+
+    <div class="card-body m-5 mt-0">
+        <div class="container-fluid">
+            <!-- <div class="d-flex justify-content-center " >  -->
+            <div class="row">
+
+                <div class=" col-lg-5 col-xl-5 mb-5 ">
+                    <p-galleria [value]="data" [responsiveOptions]="responsiveOptions"
+                        [containerStyle]="{'max-width': '600px'}" [numVisible]="5">
+                        <ng-template pTemplate="item" let-item>
+                            <p-image [src]="item.previewImageSrc" [preview]="true" alt="Image" width="100%">
+                                <!-- <ng-template pTemplate="indicator">
+                                    Indicator Content
+                                </ng-template> -->
+                            </p-image>
+                            <!-- <img [src]="item.previewImageSrc" style="width: 100%;" /> -->
+                        </ng-template>
+                        <ng-template class="marg" pTemplate="thumbnail" let-item>
+                            <div class="grid grid-nogutter justify-content-center  ">
+                                <img [src]="item.thumbnailImageSrc" class="img" />
+                            </div>
+                        </ng-template>
+                    </p-galleria>
+
+                </div>
+                <div class="col widgetBox">
+                    <div >
+                        <div class="pull-left"><span class="rupee_font font_20"
+                                style="font-size: 25px !important; color: rgb(0, 0, 0); --darkreader-inline-color: #e8e6e3;"
+                                data-darkreader-inline-color="">₹</span><span content="1775000"
+                                style="font-size: 25px; font-weight: bold; color: rgb(0, 0, 0); margin-left: -0.14em; --darkreader-inline-color: #e8e6e3;"
+                                data-darkreader-inline-color="">
+                                17.75 Lakh</span></div><br>
+               <h1>Used BMW X1 [2013-2016] in Bangalore
+            </h1>
+                    <div class="" style="margin-top:20px;position:relative">
+                        <div style="margin: 10px; font-weight: bold; color: rgb(85, 85, 85); font-size: 14px; --darkreader-inline-color: #b2aca2;"
+                            data-darkreader-inline-color="">CAR
+                            DETAILS</div>
+                        <table style="margin:10px; margin-left:20px; width:90%;" class="v_table" cellspacing="0"
+                            cellpadding="5" align="center">
+                            <tbody>
+                                <tr>
+                                    <td class="vt1">CITY </td>
+                                    <td>Bangalore</td>
+                                </tr>
+                                <tr>
+                                    <td class="vt1">FUEL TYPE</td>
+                                    <td>Diesel</td>
+                                </tr>
+                                <tr>
+                                    <td class="vt1">KMS Driven</td>
+                                    <td>33,000 Kms</td>
+                                </tr>
+                                <tr>
+                                    <td class="vt1">COLOUR</td>
+                                    <td>Orange</td>
+                                </tr>
+                                <tr>
+                                    <td class="vt1">NUMBER OF OWNERS</td>
+                                    <td> Second
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="vt1">INSURANCE TYPE</td>
+                                    <td>Comprehensive</td>
+                                </tr>
+                                <tr>
+                                    <td class="vt1">INSURANCE EXPIRY</td>
+                                    <td> Not Available
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="vt1">MANUFACTURING YEAR</td>
+                                    <td>2013</td>
+                                </tr>
+                                <tr>
+                                    <td class="vt1">REGISTRATION TYPE</td>
+                                    <td> Not Available
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="vt1">RTO LOCATION</td>
+                                    <td>Not Available</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"
+                                        style="border: medium none; text-align: left; --darkreader-inline-border-top: currentcolor; --darkreader-inline-border-right: currentcolor; --darkreader-inline-border-bottom: currentcolor; --darkreader-inline-border-left: currentcolor;"
+                                        data-darkreader-inline-border-top="" data-darkreader-inline-border-right=""
+                                        data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="">
+                                        <span><i> Listed on 21 February 2023</i></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -110,3 +110,10 @@
 a{
     cursor: pointer;
 }
+#navbarSupportedContent{
+    z-index: 999 !important;
+}
+.active{
+border-width: 0px 0em 4px 0;}
+.nav-link:hover{
+border-width: 0px 0em 4px 0;}

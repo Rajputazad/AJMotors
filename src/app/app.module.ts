@@ -10,6 +10,9 @@ import { HomeComponent } from './components/home/home.component';
 import { BuyUseCarComponent } from './components/buy-use-car/buy-use-car.component';
 import { NavComponent } from './layouts/nav/nav.component';
 import { FooterComponent } from './layouts/footer/footer.component';
+import {GalleriaModule} from 'primeng/galleria';
+import {ImageModule} from 'primeng/image';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { FooterComponent } from './layouts/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GalleriaModule,
+    ImageModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

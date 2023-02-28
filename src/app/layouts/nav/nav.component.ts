@@ -28,6 +28,7 @@ ngOnInit(){
   }
 }
 
+
 li1(){
   this.ngOnInit()
   this.router.navigate(["/home"])
