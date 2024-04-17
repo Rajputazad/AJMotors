@@ -1,14 +1,32 @@
 import { Component } from '@angular/core';
 import { Router ,ActivatedRoute} from '@angular/router';
 import { CarsService } from 'src/app/services/cars.service';
-
+declare var Razorpay: any;
 @Component({
   selector: 'app-buy-use-car',
   templateUrl: './buy-use-car.component.html',
   styleUrls: ['./buy-use-car.component.scss']
 })
 export class BuyUseCarComponent {
-    constructor( private router: Router, private route: ActivatedRoute,private Carinfo: CarsService){}
+    razorpay: any;
+    constructor( private router: Router, private route: ActivatedRoute,private Carinfo: CarsService,){
+      
+    }
+
+    ngAfterViewInit() {
+        // Initialize Razorpay after the component view is initialized
+        this.initializeRazorpay();
+      }
+    
+      initializeRazorpay() {
+        if (window.hasOwnProperty('Razorpay')) {
+          this.razorpay = new Razorpay({
+            key: 'rzp_test_jjXtP4HC5TfI8U' // Replace with your actual Razorpay API key
+          });
+        } else {
+          console.error('Razorpay SDK not loaded.');
+        }
+      }
     data=[
     {
         "previewImageSrc": "https://imgd.aeplcdn.com/640X480/cw/ucp/stockApiImg/L3MDGUM_fa59dc3b96f8424485f4e2c696979c9a_1_27550395.jpg?q=75",
@@ -81,6 +99,38 @@ ngOnInit() {
     }
     }
     
+    placeOrder(amount:any){
+        
+        if(this.razorpay){
+          const razorpayOption = {
+            description: 'test',
+            currency: 'INR',
+            prefill: {
+            name: "test"
+            },
+            amount: Number(500) * 100,
+            name: '',
+            key: 'rzp_test_jjXtP4HC5TfI8U',
+            modal: {
+              ondismiss: () => {
+                console.log("dismissed")
+              }
+            },
+            handler: (response:any) => {
+              console.log(response)
+              this.paymentId = response.razorpay_payment_id
+              this.initializeOrder();
+            }
+          }
+           
+          const razorpayInstance = new Razorpay(razorpayOption);
+          razorpayInstance.open();
+          }
+       }
+       initializeOrder() {
+        // Implement your logic to initialize the order here
+      }
+       paymentId: string = '';
     }
     
 
