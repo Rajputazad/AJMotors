@@ -14,8 +14,8 @@ export class CarsService {
   carifoget(){
     return this.http.get(this.Baseurl+"cars")
   }
-  getCars(): Observable<any> {
-    return this.http.get<any>(this.carsUrl);
+  getCars(id:any): Observable<any> {
+    return this.http.get<any>(this.Baseurl+"car/"+id);
 
   }
 }

@@ -88,11 +88,11 @@ ngOnInit() {
     }else{
 
         console.log(this.id);
-        this.Carinfo.getCars().subscribe(data => {
-            console.log(data.cars[0].id);
+        this.Carinfo.getCars(this.id).subscribe(data => {
+            console.log(data);
             
-            console.log(this.id);   
-            this.car = data.cars.find((car:any) => car.id == this.id);
+            // console.log(this.id);   
+            this.car = data.data
             console.log(this.car);
             
           });
